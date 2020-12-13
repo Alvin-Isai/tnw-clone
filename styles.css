@@ -1,0 +1,587 @@
+/* Global styling */
+
+.hidden {
+    position: absolute;
+    clip: rect(1px 1px 1px 1px); /* IE6 & 7 */
+    clip: rect(1px, 1px, 1px, 1px);
+}
+
+a {
+    text-decoration: none;
+    color: grey;
+}
+
+
+/* Nav bar */
+
+.heading {
+    display: flex;
+    position: fixed;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    background: #fff;
+    font-size: 14px;
+    box-shadow: 0 0 32px rgba(0,0,0,.15);
+    z-index: 9999;
+}
+
+header img {
+    width: 106px;
+    height: 50px;
+}
+
+.regular-menu ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#mobileMenu {
+    display: none;
+}
+
+.regular-menu ul li { padding: 0 10px; }
+
+nav .fa-search {
+    color: grey;
+    font-size: 15px;
+    border-bottom: 1px solid grey;
+    position: absolute;
+    right: 0;
+    top: 0;
+    opacity: .35;
+    padding: 16px;
+    transform: rotate(90deg);
+}
+
+/* Big articles */
+
+#container {
+    width: 100%;
+    height: 380px;
+    clear: both;
+    margin: 20px 0 0;
+    overflow: hidden;
+}
+
+#container .column1 {
+    width: 70%;
+    height: 100%;
+    float: left;
+    background: url(imgs/article1.png);
+    overflow: hidden;
+    color: white;
+    
+}
+
+#container .column1 h3 {
+    font-size: 40px;
+    margin: 220px 0 0 10px;
+}
+#container .column1 p{
+    font-size: 20px;
+    margin-bottom: 0;
+}
+#container .column1 small {
+    margin-left: 10px;
+    color: grey;
+}
+
+#container .column2 {
+    font-style: 14px;
+    float: left;
+    width: 30%;
+    overflow: hidden;
+    color: black;
+    
+}
+
+.row1 {
+    float: left;
+    width: 100%;
+    height: 185px;
+    margin-bottom: 10px;
+    background: url(imgs/article2.gif);
+    background-size: 100% 100%;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    position: relative;
+}
+
+.row2 {
+    float: left;
+    width: 100%;
+    height: 185px;
+    background: url(imgs/article3.jpg);
+    background-size: 100% 100%;
+    margin-left: 10px;
+    position: relative;
+}
+
+#container .column2 .row1 h4 {
+    font-size: 14px;
+    position: absolute;
+    top: 100px;
+    left: 20px;
+}
+#container .column2 .row1 p{
+    font-size: 20px;
+    margin-bottom: 0;
+}
+#container .column2 .row1 small {
+    font-size: 12px;
+    color: grey;
+    position: absolute;
+    top: 150px;
+    left: 20px;
+}
+
+#container .column2 .row2 h4 {
+    font-size: 14px;
+    position: absolute;
+    top: 100px;
+    left: 20px;
+    color: white;
+}
+#container .column2 .row2 p{
+    font-size: 20px;
+    margin-bottom: 0;
+}
+#container .column2 .row2 small {
+    font-size: 12px;
+    color: grey;
+    position: absolute;
+    top: 160px;
+    left: 20px;
+}
+
+/* wrapping columns */
+
+
+#wrapping-columns {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 700px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#wrapping-columns h1 {
+    color: red;
+    flex-basis: 100%;
+    font-size: 30px;
+    margin: 50px 0 0;
+}
+
+#wrapping-columns figure {
+   width: 290px;
+   height: 220px;
+   font-size: 15px;
+   margin: 0;
+}
+
+#wrapping-columns figure img {
+    width: 280px;
+    height: 140px;
+}
+
+/* funding section */
+
+#funding {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px auto;
+    width: 100%;
+    max-width: 1200px;
+}
+
+#funding h2 {
+    color: red;
+    font-size: 30px;
+    flex-basis: 100%;
+}
+
+#funding .subheading {
+    color: red;
+    margin: 10px auto;
+    flex-basis: 100%;
+}
+
+#funding article {
+    width: 280px;
+    height: 280px;
+    margin: 0 10px 0 0;
+}
+
+#funding .card-header { position: relative; }
+
+#funding article .card-header h3 {
+    width: 100%;
+    height: 40px;
+    background: #f42;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
+#funding article .card-header h4 {
+    width: 100%;
+    height: 50px;
+    color: black;
+    background: rgba(255,68,34,.08);
+    text-align: center;
+}
+
+#funding article .card-header small {
+    font-size: 10px;
+    color: grey;
+}
+
+#funding article .card-header img {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    width: 60px;
+    height: 60px;
+}
+
+#funding article .card-body {
+    font-size: 15px;
+    font-weight: 400;
+    margin: 20px 0 0 10px;
+}
+
+#funding article .card-body i{
+    margin-top: 10px;
+}
+
+#funding article .card-footer {
+    font-size: 15px;
+    font-weight: 400;
+    margin: 40px 0 0 10px;
+    border-top: 1px solid red;
+    padding-top: 10px;
+}
+
+#funding article .card-footer small {
+    font-size: 12px;
+    color: #555;
+}
+
+/* Two columns */
+
+#two-columns {
+    display: flex;
+    width: 100%;
+    height: 500px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#two-columns .first-column h3{
+    font-size: 30px;
+    color: red;
+}
+
+#two-columns .second-column h3 {
+    font-size: 30px;
+    color: red;
+    margin-left: 10px;
+}
+
+#two-columns .first-column .row-1 {
+    width: 425px;
+    height: 320px;
+    margin: 10px 10px 0 0;
+    background: url(imgs/column-pic1.jpeg) 100% 100% no-repeat ;
+    background-size: contain;
+    color: white;
+    font-size: 20px;
+    position: relative;
+}
+
+#two-columns .second-column .row-1 {
+    width: 425px;
+    height: 320px;
+    margin: 10px 0 0 10px;
+    background: url(imgs/columnpic2.png) 100% 100% no-repeat ;
+    background-size: contain;
+    color: white;
+    font-size: 20px;
+    position: relative;
+}
+
+#two-columns .first-column .row-1 h4 {
+    position: absolute;
+    top: 240px;
+}
+
+#two-columns .second-column .row-1 h4 {
+    position: absolute;
+    top: 240px;
+}
+
+#two-columns .first-column .row-1 small {
+    position: absolute;
+    top: 300px;
+    font-size: 12px;
+    color: grey;
+}
+
+#two-columns .second-column .row-1 small {
+    position: absolute;
+    top: 300px;
+    font-size: 12px;
+    color: grey;
+}
+
+#two-columns .first-column .row-middle1 {
+    display: flex;
+    margin-top: 10px;
+    background: rgba(255,68,34,.08);
+    color: red;
+    width: 425px;
+    height: 90px;
+    font-size: 15px;
+}
+
+#two-columns .first-column .row-middle1 h5{ padding: 10px; }
+
+#two-columns .first-column .row-middle1 img{
+    width: 96px;
+    height: 100%;
+}
+
+
+#two-columns .second-column .row-middle2 {
+    display: flex;
+    margin: 10px;
+    background: rgba(255,68,34,.08);
+    color: red;
+    width: 425px;
+    height: 90px;
+    font-size: 15px;
+}
+
+#two-columns .second-column .row-middle2 h5{ padding: 10px; }
+
+#two-columns .second-column .row-middle2 img{
+    width: 96px;
+    height: 100%;
+}
+
+#two-columns .first-column .row-bottom1 {
+    margin: 10px;
+    font-size: 15px;
+    width: 425px;
+}
+
+#two-columns .first-column .row-bottom1 li {
+    padding: 10px;
+    border-bottom: 1px solid grey;
+}
+
+#two-columns .first-column .row-bottom1 li:before {
+    content: "•";
+    color: red;
+    font-weight: bold; 
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+}
+
+
+#two-columns .second-column .row-bottom2 {
+    margin: 10px;
+    font-size: 15px;
+    width: 425px;
+}
+
+#two-columns .second-column .row-bottom2 li {
+    padding: 10px;
+    border-bottom: 1px solid grey;
+}
+
+#two-columns .second-column .row-bottom2 li:before {
+    content: "•";
+    color: red;
+    font-weight: bold; 
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+}
+
+/* footer */
+
+footer {
+    position: relative;
+    clear: both;
+    margin: 0 -10px;
+}
+
+#copyright {
+    background: #000;
+    color: #aaa;
+    text-align: center;
+    height:70px;
+    position:absolute;
+    bottom:0;
+    top: 0;
+    width:100%;
+    margin: 500px 0 0 ;
+}
+
+#copyright .wrapper {
+    margin: 30px;
+    font-size: 13px;   
+}
+
+.footer-links {
+    background: #131313;
+    color: #555;
+    width: 100%;
+    height: 175px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: 330px 0;
+}
+
+.footer-links .wrapper ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.footer-links .wrapper .social-links {
+    font-size: 20px;
+    color: white;
+    height: 120px;
+}
+
+.footer-links .wrapper .social-links li {
+    padding: 10px;
+    background: #333;
+    border-radius: 50%;
+    margin: 0 5px 0;
+}
+
+.footer-links .wrapper .link-menu {
+    font-size: 13px;
+    color: #aaaaaa;
+    height: 50px;
+}
+
+.footer-links .wrapper .link-menu li {
+    margin: 0 5px 0;
+}
+
+
+/* media query */
+
+@media (max-width: 776px) {
+
+    .regular-menu {
+        display: none;
+    }
+ 
+    /* hamburger icon */
+    
+    .toggleMobile {
+        position: fixed;
+        top: 15px;
+        right: 15px;
+        display: block;
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        z-index: 3;
+    }
+    .toggleMobile span.menu1, .toggleMobile span.menu2, .toggleMobile span.menu3 {
+        width: 100%;
+        height: 2px;
+        background: #FF4422;
+        -webkit-transition: all 0.35s cubic-bezier(0.75, 0.25, 0.10, 0.95);
+        transition: all 0.35s cubic-bezier(0.75, 0.25, 0.10, 0.95);
+        
+    }
+    .change .menu1 {
+        transform: rotateZ(-45deg) translate(-8px, 2px);
+        background: white !important;
+    }
+    .change .menu2 {
+        opacity: 0;
+    }
+    
+    .change .menu3 {
+        transform: rotateZ(45deg) translate(-8px, -2px);
+        background: white !important;
+    }
+
+
+    /* slide out menu */
+    
+    #mobileMenu {
+        position: fixed;
+        top: 0;
+        right: -3000px;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to bottom right,#c09,#f42 85%);
+        transition: right .8s cubic-bezier(1,0 , 0, 1);
+        display: flex;
+    }
+    
+    .change #mobileMenu{
+        right: 0;
+        z-index: 2;
+    }
+
+    nav .fa-search {
+        right: 55px;
+        border-top: 1px solid grey;
+    }
+
+    #mobileMenu .container {
+        position: absolute;
+        color: white;
+        margin: 175px 0 0 20px;
+        width: 90%;
+        height: 450px;
+        font-size: 16px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    #mobileMenu .sections { flex-basis: 100%; }
+
+    #mobileMenu .about, #mobileMenu .sites { flex-basis: 50%; }
+
+    #mobileMenu section li{ padding-top: 10px; }
+
+    #mobileMenu section li a { color: hsla(0,0%,100%,.6); }
+
+    #mobileMenu .social-links {
+        width: 100%;
+        height: 25px;
+        margin-top: 100px;
+    }
+
+    #mobileMenu .social-links ul {
+        display: flex;
+        justify-content: space-around;
+        color: white;
+        font-size: 18px;
+    }
+
+    /* big articles */
+
+    
+
+}
